@@ -9,3 +9,283 @@
     <p> BEM VINDO  </p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Aplicativo de Coleta Seletiva</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#14532d);
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#d1fae5;
+}
+
+nav{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#86efac;
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#86efac;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.lixeira{
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.azul{background:#2563eb;}
+.vermelha{background:#dc2626;}
+.verde{background:#16a34a;}
+.amarela{background:#ca8a04;}
+.marrom{background:#92400e;}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+}
+
+.stat h3{
+    font-size:2rem;
+    color:#86efac;
+}
+
+.meme{
+    text-align:center;
+    font-size:1.2rem;
+    padding:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#16a34a;
+}
+
+.hero-icon{
+    font-size:80px;
+    margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#residuos">Resíduos</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#memes">Memes</a>
+</nav>
+
+<header>
+    <div class="hero-icon">♻️</div>
+    <h1>AGRINHO 2026</h1>
+    <p>Aplicativo de Coleta Seletiva</p>
+    <a href="#sobre" class="btn">Conhecer Projeto</a>
+</header>
+
+<section id="sobre" class="section">
+    <div class="card">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            O Aplicativo de Coleta Seletiva foi desenvolvido para ajudar a população
+            a identificar corretamente onde descartar cada tipo de resíduo.
+            O projeto busca incentivar a sustentabilidade, a reciclagem e a
+            preservação do meio ambiente por meio da tecnologia.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Informações</h2>
+        <p><strong>Escola:</strong> Colégio Cívico-Militar Monteiro Lobato</p>
+        <p><strong>Prof. Orientador:</strong> Antonio</p>
+        <p><strong>Integrante:</strong> Kamilly</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2 style="text-align:center;margin-bottom:20px;">Estatísticas</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>5</h3>
+            <p>Tipos de Resíduos</p>
+        </div>
+
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Educação Ambiental</p>
+        </div>
+
+        <div class="stat">
+            <h3>♻️</h3>
+            <p>Reciclagem</p>
+        </div>
+
+        <div class="stat">
+            <h3>🌎</h3>
+            <p>Sustentabilidade</p>
+        </div>
+    </div>
+</section>
+
+<section id="residuos" class="section">
+    <h2 style="text-align:center;margin-bottom:30px;">Tipos de Resíduos</h2>
+
+    <div class="grid">
+
+        <div class="lixeira azul">
+            🔵 PAPEL<br><br>
+            Jornais, revistas, papelão.
+        </div>
+
+        <div class="lixeira vermelha">
+            🔴 PLÁSTICO<br><br>
+            Garrafas PET, embalagens.
+        </div>
+
+        <div class="lixeira verde">
+            🟢 VIDRO<br><br>
+            Garrafas e potes de vidro.
+        </div>
+
+        <div class="lixeira amarela">
+            🟡 METAL<br><br>
+            Latas e materiais metálicos.
+        </div>
+
+        <div class="lixeira marrom">
+            🟤 ORGÂNICO<br><br>
+            Restos de alimentos.
+        </div>
+
+    </div>
+</section>
+
+<section id="beneficios" class="section">
+    <div class="card">
+        <h2>Benefícios da Coleta Seletiva</h2>
+
+        <ul>
+            <li>🌱 Reduz a poluição ambiental.</li>
+            <li>♻️ Incentiva a reciclagem.</li>
+            <li>🌎 Preserva recursos naturais.</li>
+            <li>💚 Promove a sustentabilidade.</li>
+            <li>📚 Aumenta a conscientização da população.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="memes" class="section">
+    <div class="card">
+        <h2>Momentos Divertidos da Reciclagem 😂</h2>
+
+        <div class="meme">
+            😎 Quando você separa o lixo corretamente e ajuda o planeta.
+        </div>
+
+        <div class="meme">
+            🤔 Eu olhando para a lixeira tentando lembrar onde vai a garrafa PET.
+        </div>
+
+        <div class="meme">
+            🌎 O planeta agradece cada pequena atitude!
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>Agrinho 2026</h3>
+    <p>Aplicativo de Coleta Seletiva</p>
+    <p>Colégio Cívico-Militar Monteiro Lobato</p>
+    <p>Prof. Antonio | Integrante: Kamilly</p>
+</footer>
+
+</body>
+</html>
