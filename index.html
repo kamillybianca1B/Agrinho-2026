@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p> BEM VINDO  </p>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -30,21 +19,6 @@ body{
     line-height:1.6;
 }
 
-header{
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-header p{
-    font-size:1.2rem;
-    color:#d1fae5;
-}
-
 nav{
     background:rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
@@ -63,6 +37,41 @@ nav a{
 
 nav a:hover{
     color:#86efac;
+}
+
+header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero-icon{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#d1fae5;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#16a34a;
 }
 
 .section{
@@ -121,49 +130,49 @@ nav a:hover{
     color:#86efac;
 }
 
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
 .meme{
     text-align:center;
-    font-size:1.2rem;
-    padding:20px;
+    padding:15px;
+    font-size:1.1rem;
 }
 
 footer{
     text-align:center;
     padding:30px;
     background:rgba(0,0,0,0.3);
+    margin-top:40px;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#22c55e;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#16a34a;
-}
-
-.hero-icon{
-    font-size:80px;
-    margin-bottom:20px;
+ul{
+    padding-left:20px;
 }
 </style>
 </head>
+
 <body>
 
 <nav>
     <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
     <a href="#residuos">Resíduos</a>
     <a href="#beneficios">Benefícios</a>
-    <a href="#memes">Memes</a>
 </nav>
 
 <header>
+    <h3>👋 BEM-VINDO</h3>
     <div class="hero-icon">♻️</div>
     <h1>AGRINHO 2026</h1>
     <p>Aplicativo de Coleta Seletiva</p>
@@ -171,28 +180,58 @@ footer{
 </header>
 
 <section id="sobre" class="section">
+
     <div class="card">
         <h2>Sobre o Projeto</h2>
+
         <p>
-            O Aplicativo de Coleta Seletiva foi desenvolvido para ajudar a população
+            O Aplicativo de Coleta Seletiva foi criado para ajudar as pessoas
             a identificar corretamente onde descartar cada tipo de resíduo.
-            O projeto busca incentivar a sustentabilidade, a reciclagem e a
-            preservação do meio ambiente por meio da tecnologia.
+            O projeto promove a sustentabilidade, a reciclagem e a preservação
+            do meio ambiente através da tecnologia.
         </p>
     </div>
 
     <div class="card">
-        <h2>Informações</h2>
+        <h2>Informações do Projeto</h2>
+
+        <p><strong>Projeto:</strong> Agrinho 2026</p>
         <p><strong>Escola:</strong> Colégio Cívico-Militar Monteiro Lobato</p>
-        <p><strong>Prof. Orientador:</strong> Antonio</p>
+        <p><strong>Professor:</strong> Antonio</p>
         <p><strong>Integrante:</strong> Kamilly</p>
     </div>
+
+</section>
+
+<section id="galeria" class="section">
+
+    <h2 style="text-align:center;margin-bottom:30px;">
+        🌱 Agricultura e Sustentabilidade
+    </h2>
+
+    <div class="galeria">
+
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200"
+             alt="Agricultura">
+
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200"
+             alt="Campo">
+
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200"
+             alt="Sustentabilidade">
+
+    </div>
+
 </section>
 
 <section class="section">
-    <h2 style="text-align:center;margin-bottom:20px;">Estatísticas</h2>
+
+    <h2 style="text-align:center;margin-bottom:20px;">
+        📊 Estatísticas
+    </h2>
 
     <div class="stats">
+
         <div class="stat">
             <h3>5</h3>
             <p>Tipos de Resíduos</p>
@@ -212,32 +251,37 @@ footer{
             <h3>🌎</h3>
             <p>Sustentabilidade</p>
         </div>
+
     </div>
+
 </section>
 
 <section id="residuos" class="section">
-    <h2 style="text-align:center;margin-bottom:30px;">Tipos de Resíduos</h2>
+
+    <h2 style="text-align:center;margin-bottom:30px;">
+        ♻️ Tipos de Resíduos
+    </h2>
 
     <div class="grid">
 
         <div class="lixeira azul">
             🔵 PAPEL<br><br>
-            Jornais, revistas, papelão.
+            Jornais, revistas e papelão.
         </div>
 
         <div class="lixeira vermelha">
             🔴 PLÁSTICO<br><br>
-            Garrafas PET, embalagens.
+            Garrafas PET e embalagens.
         </div>
 
         <div class="lixeira verde">
             🟢 VIDRO<br><br>
-            Garrafas e potes de vidro.
+            Garrafas e potes.
         </div>
 
         <div class="lixeira amarela">
             🟡 METAL<br><br>
-            Latas e materiais metálicos.
+            Latas e peças metálicas.
         </div>
 
         <div class="lixeira marrom">
@@ -246,45 +290,59 @@ footer{
         </div>
 
     </div>
+
 </section>
 
 <section id="beneficios" class="section">
+
     <div class="card">
-        <h2>Benefícios da Coleta Seletiva</h2>
+
+        <h2>🌎 Benefícios da Coleta Seletiva</h2>
 
         <ul>
-            <li>🌱 Reduz a poluição ambiental.</li>
-            <li>♻️ Incentiva a reciclagem.</li>
-            <li>🌎 Preserva recursos naturais.</li>
-            <li>💚 Promove a sustentabilidade.</li>
-            <li>📚 Aumenta a conscientização da população.</li>
+            <li>Redução da poluição ambiental.</li>
+            <li>Incentivo à reciclagem.</li>
+            <li>Preservação dos recursos naturais.</li>
+            <li>Melhoria da qualidade de vida.</li>
+            <li>Maior conscientização da população.</li>
         </ul>
+
     </div>
+
 </section>
 
-<section id="memes" class="section">
+<section class="section">
+
     <div class="card">
-        <h2>Momentos Divertidos da Reciclagem 😂</h2>
+
+        <h2>😂 Momento Divertido</h2>
 
         <div class="meme">
-            😎 Quando você separa o lixo corretamente e ajuda o planeta.
+            😎 Quando você separa corretamente o lixo e ajuda o planeta!
         </div>
 
         <div class="meme">
-            🤔 Eu olhando para a lixeira tentando lembrar onde vai a garrafa PET.
+            🤔 Eu tentando lembrar em qual lixeira vai a garrafa PET...
         </div>
 
         <div class="meme">
-            🌎 O planeta agradece cada pequena atitude!
+            🌍 O planeta agradece cada pequena atitude!
         </div>
+
     </div>
+
 </section>
 
 <footer>
-    <h3>Agrinho 2026</h3>
+
+    <h3>AGRINHO 2026</h3>
+
     <p>Aplicativo de Coleta Seletiva</p>
+
     <p>Colégio Cívico-Militar Monteiro Lobato</p>
-    <p>Prof. Antonio | Integrante: Kamilly</p>
+
+    <p>Professor Antonio | Integrante Kamilly</p>
+
 </footer>
 
 </body>
